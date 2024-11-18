@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-
->>>>>>> brancholeh1
 #include "BST.h"
 #include <iostream>
 #include <fstream>
