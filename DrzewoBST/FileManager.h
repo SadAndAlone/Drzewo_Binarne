@@ -8,7 +8,7 @@
 class FileManager {
 public:
     static void saveTreeToBinaryFile(const BST& tree, const std::string& filename);
-    static loadTreeFromBinaryFile(BST& tree, const std::string& filename);
+    void loadTreeFromBinaryFile(BST& tree, const std::string& filename);
 };
 
 #endif
