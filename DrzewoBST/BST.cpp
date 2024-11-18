@@ -1,4 +1,7 @@
+<<<<<<< HEAD
+=======
 
+>>>>>>> brancholeh1
 #include "BST.h"
 #include <iostream>
 #include <fstream>
@@ -169,6 +172,9 @@ void BST::loadFromFile(const std::string& filename) {
     if (!inFile) {
         throw std::ios_base::failure("Failed to open file for reading");
     }
+    clear(); // ”дал€ем существующее дерево перед загрузкой
+    loadFromFile(root, inFile);
+}
     clear(); 
     loadFromFile(root, inFile);
 }
