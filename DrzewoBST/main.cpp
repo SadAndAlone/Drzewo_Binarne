@@ -10,6 +10,7 @@ void menu() {
     std::cout << "5. Load Tree from File\n";
     std::cout << "6. Exit\n";
 }
+
 int main() {
     BST tree;
     int choice;

@@ -168,9 +168,6 @@ void BST::loadFromFile(const std::string& filename) {
     if (!inFile) {
         throw std::ios_base::failure("Failed to open file for reading");
     }
-    clear();
-    loadFromFile(root, inFile);
-}
-    clear(); 
+    clear(); // ”дал€ем существующее дерево перед загрузкой
     loadFromFile(root, inFile);
 }
