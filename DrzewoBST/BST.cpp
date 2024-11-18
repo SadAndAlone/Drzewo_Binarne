@@ -157,7 +157,7 @@ void BST::loadFromFile(Node*& node, std::ifstream& inFile) {
         }
         else {
             node = new Node(value);
-            loadFromFile(node->left, inFile);
+            loadFromFile(node->left, pefile);
             loadFromFile(node->right, inFile);
         }
     }
