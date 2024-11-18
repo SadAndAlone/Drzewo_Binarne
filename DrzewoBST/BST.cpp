@@ -1,3 +1,4 @@
+
 #include "BST.h"
 #include <iostream>
 #include <fstream>
@@ -157,7 +158,7 @@ void BST::loadFromFile(Node*& node, std::ifstream& inFile) {
         }
         else {
             node = new Node(value);
-            loadFromFile(node->left, pefile);
+            loadFromFile(node->left, inFile);
             loadFromFile(node->right, inFile);
         }
     }
@@ -171,3 +172,5 @@ void BST::loadFromFile(const std::string& filename) {
     clear(); // ”дал€ем существующее дерево перед загрузкой
     loadFromFile(root, inFile);
 }
+=======
+>>>>>>> Stashed changes
